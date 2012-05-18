@@ -1,0 +1,32 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="all" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title>index</title>
+	<style type="text/css">
+		body{padding:100px;}
+		i:after{display:block;content:'';width:100px;height:50px;border-bottom:3px solid #cecece;border-radius:50px 50px 20px 150px;}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var a=[1,1,2,3,4,5,4,3];
+		function unrepeat(array){
+			var c={};
+			var b=[];
+			for(var i=0;i<array.length;i++){
+				if(!c[array[i]]){
+					b.push(a[i]);
+					c[array[i]]=true;
+				}
+			}
+			return b;
+		}
+		alert(unrepeat(a))
+	</script>
+</body>
+</html>
+
